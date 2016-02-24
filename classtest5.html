@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>  
+  <head>    
+    <title>Date Calculator in JavaScript</title>
+    
+	<script src="eVolvingUIDesign.js"> </script>
+   
+
+  <script>
+      function sum()
+      { 
+        var a = document.getElementById("1st").value;
+        var b = document.getElementById("2nd").value;
+				a = parseInt(a);
+				b = parseInt(b);
+				if(!isNaN(a) && !isNaN(b))
+					alert(a+b);
+				else
+					alert("Enter digits");
+					
+		}
+
+
+  </script>
+  
+  </head>
+  
+  <body> 
+
+  <h1>eVolvingUIDesign</h1>
+		<form>
+		  Enter Date (dd/mm/yyyy): <input type="text" id="userdate1" name="userdate1"> <br />  
+
+		  <button onclick="daystoChristmas()" type="button"> Go </button>	
+
+		  <p id="demo"></p>
+
+		  <p id="demo1" class="dateformat"></p>		  
+		</form>
+<!--  
+  <script>
+      function getDate()
+      { 
+        document.getElementById('demo').innerHTML = "Today's date is: " + new Date(); 
+      }
+
+  </script>
+
+  <button onclick="getDate()">Get Today's Date</button> <br/> <br />
+
+  Enter Date (dd/mm/yyyy): <input type="date" id="userdate1" name="userdate1"> <br />  
+
+  <button onclick="daystoChristmas()"> Get Days left until next Christmas </button>
+
+  <p id="demo"></p>
+
+  <p id="demo1" class="dateformat"></p> -->
+  
+	
+
+  </body> 
+  </html>
+
+
